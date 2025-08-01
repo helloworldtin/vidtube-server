@@ -5,3 +5,8 @@ export const REFRESH_TOKEN_SECRETE = process.env.REFRESH_TOKEN_SECRETE ?? "";
 
 export const ACCESS_TOKEN_EXPIRY = parseInt(process.env.ACCESS_TOKEN_EXPIRY || "0");
 export const REFRESH_TOKEN_EXPIRY = parseInt(process.env.REFRESH_TOKEN_EXPIRY || "0");
+
+export const cookieOption = {
+  httpOnly: true,
+  secure: true,
+};
